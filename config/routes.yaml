@@ -1,0 +1,17 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+test_page:
+  path: /test
+  controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
+  defaults:
+    template: 'test_page.html.twig'
+
+test1:
+  path: /
+  controller: App\Controller\RegistrationController::registerAction
+  defaults:
+    template: 'register.html.twig'
+
+
