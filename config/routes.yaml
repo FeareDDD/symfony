@@ -1,17 +1,21 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
-
-test_page:
-  path: /test
-  controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
+start_page:
+  path: /start_page
+  controller: App\Controller\RegistrationController::getBack
   defaults:
-    template: 'test_page.html.twig'
+    template: 'start_page.html.twig'
 
-test1:
-  path: /
+registration_page:
+  path: /registration
   controller: App\Controller\RegistrationController::registerAction
   defaults:
     template: 'register.html.twig'
+
+login_page:
+  path: /login
+  controller: App\Controller\RegistrationController::loginAction
+  defaults:
+    template: 'login.html.twig'
+
+
 
 

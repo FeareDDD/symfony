@@ -40,12 +40,30 @@ class RegistrationController extends Controller
             // ... do any other work - like sending them an email, etc
             // maybe set a "flash" success message for the user
 
-            return $this->redirectToRoute('test_page');
+            return $this->redirectToRoute('start_page');
         }
 
         return $this->render(
             '/register.html.twig',
             array('form' => $form->createView())
         );
+    }
+
+    public function getBack(Request $request)
+    {
+        $form = $this->createForm(UserType::class);
+        $form->handleRequest($request);
+        if ($form->isSubmitted()) {
+            return $this->redirectToRoute('registration_page');
+        }
+        return $this->render(
+            '/start_page.html.twig',
+            array('form' => $form->createView())
+        );
+    }
+
+    public function loginAction()
+    {
+
     }
 }
