@@ -1,21 +1,3 @@
-start_page:
-  path: /start_page
-  controller: App\Controller\RegistrationController::getBack
-  defaults:
-    template: 'start_page.html.twig'
-
-registration_page:
-  path: /registration
-  controller: App\Controller\RegistrationController::registerAction
-  defaults:
-    template: 'register.html.twig'
-
-login_page:
-  path: /login
-  controller: App\Controller\RegistrationController::loginAction
-  defaults:
-    template: 'login.html.twig'
-
-
-
-
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index

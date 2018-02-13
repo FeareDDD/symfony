@@ -26,6 +26,7 @@
         "symfony/yaml": "^4.0"
     },
     "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "^3.0",
         "symfony/browser-kit": "^4.0",
         "symfony/css-selector": "^4.0",
         "symfony/dotenv": "^4.0",
@@ -72,7 +73,7 @@
     },
     "extra": {
         "symfony": {
-            "id": "01C5S606VYVPYH4PG11DEX1P1S",
+            "id": "01C68DHGX7MYCYHDY0MVJNAP4X",
             "allow-contrib": false
         }
     }

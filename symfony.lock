@@ -17,6 +17,9 @@
     "doctrine/common": {
         "version": "v2.8.1"
     },
+    "doctrine/data-fixtures": {
+        "version": "v1.3.0"
+    },
     "doctrine/dbal": {
         "version": "v2.6.3"
     },
@@ -26,11 +29,20 @@
             "repo": "github.com/symfony/recipes",
             "branch": "master",
             "version": "1.6",
-            "ref": "3d54b5940ca798e4b33918dd8e3309bfadbb339e"
+            "ref": "c407ab0b5e5a39b242a52d323a5e84e6d3b7e4c0"
         }
     },
     "doctrine/doctrine-cache-bundle": {
         "version": "1.3.2"
+    },
+    "doctrine/doctrine-fixtures-bundle": {
+        "version": "3.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.0",
+            "ref": "2ea6070ecf365f9a801ccaed4b31d4a3b7af5693"
+        }
     },
     "doctrine/doctrine-migrations-bundle": {
         "version": "1.2",
@@ -197,7 +209,7 @@
             "repo": "github.com/symfony/recipes",
             "branch": "master",
             "version": "3.3",
-            "ref": "ab8d43770fe04b6df060fc74b807a547144a6d99"
+            "ref": "09357a9c75f41be3bdbf7726453ad8399e8c4ee4"
         }
     },
     "symfony/http-foundation": {
@@ -290,7 +302,7 @@
             "repo": "github.com/symfony/recipes",
             "branch": "master",
             "version": "3.3",
-            "ref": "34eb245ce4194e7ae713558084180e2c532e7afd"
+            "ref": "f8a63faa0d9521526499c0a8f403c9964ecb0527"
         }
     },
     "symfony/serializer": {
