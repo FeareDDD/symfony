@@ -4,9 +4,15 @@
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <div class="container">
+            {% if is_granted('IS_AUTHENTIFICATED_FULLY') %}
+                <a href="{{ logout_path() }}" class="btn-danger">Logout</a>
+            {% endif %}
+            {% block body %}{% endblock %}
+        </div>
         {% block javascripts %}{% endblock %}
     </body>
 </html>
